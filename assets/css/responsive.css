@@ -1,0 +1,44 @@
+/* Responsive rules for N&N International @ ASH Spare Parts */
+@media (max-width: 1020px) {
+  .catalog-grid { grid-template-columns: repeat(3, 1fr); }
+  .vendor-grid { grid-template-columns: repeat(2, 1fr); }
+  .hero-grid { gap: 32px; }
+  .hero-figure img { height: 380px; }
+}
+@media (max-width: 860px) {
+  .section { padding: 52px 0; }
+  .hero-grid, .about-grid, .contact-grid { grid-template-columns: 1fr; }
+  .hero-figure img { height: 300px; }
+  .about-figure img { height: 280px; }
+  .why-grid { grid-template-columns: repeat(2, 1fr); }
+  .blog-grid { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .header-cta { display: none; }
+  .nav-toggle { display: block; }
+  .main-nav {
+    display: none; position: absolute; top: 100%; left: 0; right: 0;
+    background: var(--bg); border-bottom: 1px solid var(--line);
+    box-shadow: var(--shadow-lg); margin: 0;
+  }
+  .main-nav.open { display: block; }
+  .main-nav ul { flex-direction: column; padding: 8px 20px 16px; gap: 0; }
+  .main-nav a { padding: 11px 8px; border-bottom: 1px solid var(--line-soft); border-radius: 0; }
+  .main-nav a.active { border-bottom-color: var(--bronze); }
+  .header-inner { flex-wrap: wrap; }
+  .modal dl { grid-template-columns: 110px 1fr; }
+}
+@media (max-width: 560px) {
+  body { font-size: 15px; }
+  .section { padding: 44px 0; }
+  .vendor-grid, .catalog-grid, .why-grid { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; }
+  .blog-form .form-grid, .contact-form .form-grid { grid-template-columns: 1fr; }
+  .hero-actions .btn { width: 100%; text-align: center; }
+  .toolbar-row .field { flex: 1 1 100%; }
+  .person-card { flex-direction: column; }
+  .person-card img { width: 120px; height: 150px; }
+  .modal { padding: 22px 18px; }
+  .modal dl { grid-template-columns: 1fr; gap: 2px 0; }
+  .modal dd { margin-bottom: 10px; }
+  .vendor-actions .btn { flex: 1 1 100%; }
+}

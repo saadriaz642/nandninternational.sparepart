@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — N&amp;N International @ ASH Spare Parts</title>
+  <meta name="description" content="Articles from N&N International @ ASH Spare Parts: guides to the automotive spare-parts market and to exploring spare-parts vendors.">
+  <meta property="og:title" content="Blog — N&N International @ ASH Spare Parts">
+  <meta property="og:description" content="Practical guides to the spare-parts market and to exploring its vendors.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/hero/hero-spare-parts-shop.jpg">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%231e4d3b'/%3E%3Ctext x='32' y='40' font-family='Georgia,serif' font-size='24' font-weight='bold' fill='%23ffffff' text-anchor='middle'%3EN%26N%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="N&N International @ ASH Spare Parts — home">
+        <span class="brand-mark" aria-hidden="true">N&amp;N</span>
+        <span>
+          <span class="brand-name">N&amp;N international</span>
+          <span class="brand-sub">@ashspareparts</span>
+        </span>
+      </a>
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#vendors">Vendors</a></li>
+          <li><a href="index.html#catalog">Spare Parts</a></li>
+          <li><a href="index.html#why">Why Choose Us</a></li>
+          <li><a href="index.html#faq">FAQs</a></li>
+          <li><a href="blog.html" class="active" aria-current="page">Blogs</a></li>
+          <li><a href="index.html#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn-primary header-cta" href="index.html#vendors">Explore Vendors</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section" aria-labelledby="blog-heading">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Blogs</span>
+          <h1 id="blog-heading">Blog</h1>
+          <p class="lead">Practical guides to the spare-parts market and to exploring its vendors.</p>
+        </div>
+
+        <p><button type="button" class="btn btn-primary" id="add-blog-btn">Add New Blog</button></p>
+
+        <div class="local-note" role="note">
+          <strong>About blogs added here:</strong> blogs you add with the button above are stored only in this browser on this device (localStorage). They are not published to other visitors, and they will not appear on anyone else's computer or phone. They can be edited or deleted from this browser at any time.
+        </div>
+
+        <div class="blog-form" id="blog-manager" style="display:none">
+          <h2 id="blog-form-heading">Add New Blog (saved in this browser only)</h2>
+          <form id="blog-form" novalidate>
+            <div class="form-grid">
+              <div class="field">
+                <label for="blog-title">Blog title *</label>
+                <input type="text" id="blog-title" required>
+              </div>
+              <div class="field">
+                <label for="blog-category">Category *</label>
+                <input type="text" id="blog-category" placeholder="e.g. Market Guide" required>
+              </div>
+              <div class="field field-full">
+                <label for="blog-excerpt">Excerpt * (max 300 characters)</label>
+                <input type="text" id="blog-excerpt" maxlength="300" required>
+              </div>
+              <div class="field field-full">
+                <label for="blog-cover">Cover image *</label>
+                <select id="blog-cover"></select>
+                <span class="hint">Choose from the photographs already used on this website. Uploading a new image is not supported in this static version.</span>
+              </div>
+              <div class="field field-full">
+                <label for="blog-content">Full article content *</label>
+                <textarea id="blog-content" required placeholder="Write the article here. Use a blank line between paragraphs."></textarea>
+              </div>
+            </div>
+            <p style="margin-top:16px">
+              <button type="submit" class="btn btn-primary" id="blog-submit">Publish</button>
+              <button type="button" class="btn btn-ghost" id="blog-cancel">Cancel</button>
+            </p>
+            <p class="form-status" id="blog-form-status" role="status"></p>
+          </form>
+        </div>
+
+        <div id="blog-listing">
+          <div class="blog-grid" id="blog-grid"></div>
+        </div>
+
+        <article class="article" id="local-blog-reader" style="display:none" aria-label="Local blog article"></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <p class="footer-brand-name">N&amp;N international</p>
+          <p class="footer-brand-sub">@ashspareparts</p>
+          <p style="margin-top:14px">An organised vendor directory and market showcase for ASH Spare Parts Market — spare-parts shops, categories and guides in one place.</p>
+          <p class="footer-credit">Project presented by Dr. Nadeem Nazir &amp; Associates.</p>
+        </div>
+        <div>
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#vendors">Vendors</a></li>
+            <li><a href="index.html#catalog">Spare Parts</a></li>
+            <li><a href="index.html#why">Why Choose Us</a></li>
+            <li><a href="index.html#faq">FAQs</a></li>
+            <li><a href="blog.html">Blogs</a></li>
+            <li><a href="index.html#contact">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Credits</h3>
+          <p>Digital initiative under the guidance of Dr. Nadeem Nazir.</p>
+          <p>Website credits: Dr. Nadeem Nazir &amp; Associates.</p>
+          <p>Photographs: see <a href="IMAGE-CREDITS.md">IMAGE-CREDITS.md</a> for full sources and licences.</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year">2026</span> N&amp;N International @ ASH Spare Parts. All rights reserved.</span>
+        <span>Digital Partner: <a href="https://diginixit.com" target="_blank" rel="noopener">DigiNixIT</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/blogs.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
