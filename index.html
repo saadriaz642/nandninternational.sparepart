@@ -29,7 +29,7 @@
       <nav class="main-nav" id="main-nav" aria-label="Main navigation">
         <ul>
           <li><a href="#home" class="active">Home</a></li>
-          <li><a href="#vendors">Vendors</a></li>
+          <!-- <li><a href="#vendors">Vendors</a></li> -->
           <li><a href="#catalog">Spare Parts</a></li>
           <li><a href="#why">Why Choose Us</a></li>
           <li><a href="#faq">FAQs</a></li>
@@ -37,7 +37,7 @@
           <li><a href="#contact">Contact Us</a></li>
         </ul>
       </nav>
-      <a class="btn btn-primary header-cta" href="#vendors">Explore Vendors</a>
+      <!-- <a class="btn btn-primary header-cta" href="#vendors">Explore Vendors</a> -->
     </div>
   </header>
 
@@ -51,7 +51,7 @@
           <p class="lead">Explore a diverse network of spare parts shops, discover automotive components and connect with vendors through one organized market directory.</p>
           <p class="hero-guidance">Presented under the guidance of <strong>Dr. Nadeem Nazir</strong>.</p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#vendors">Explore Vendors</a>
+            <!-- <a class="btn btn-primary" href="#vendors">Explore Vendors</a> -->
             <a class="btn btn-secondary" href="#about">Discover the Market</a>
           </div>
         </div>
@@ -95,116 +95,6 @@
       </div>
     </section>
 
-    <!-- Vendor Directory -->
-    <section class="section" id="vendors" aria-labelledby="vendors-heading">
-      <div class="container">
-        <div class="section-head">
-          <span class="eyebrow">Vendor Directory</span>
-          <h2 id="vendors-heading">Find a Spare Parts Vendor</h2>
-          <p class="lead">Search the directory by shop name or by the parts you need, then filter by category, specialization or city. Vendor details are shown exactly as supplied — fields that were not supplied are not shown.</p>
-        </div>
-
-        <div class="toolbar" role="search" aria-label="Search and filter vendors">
-          <div class="toolbar-row">
-            <div class="field field-grow">
-              <label for="search-vendors">Search vendors</label>
-              <input type="search" id="search-vendors" placeholder="Search by shop name or parts, e.g. Muslim Autos or brake pads" autocomplete="off">
-            </div>
-            <div class="field">
-              <label for="filter-category">Category</label>
-              <select id="filter-category"></select>
-            </div>
-            <div class="field">
-              <label for="filter-specialization">Specialization</label>
-              <select id="filter-specialization"></select>
-            </div>
-            <div class="field">
-              <label for="filter-city">City</label>
-              <select id="filter-city"></select>
-            </div>
-            <div class="field">
-              <label for="sort-vendors">Sort</label>
-              <select id="sort-vendors">
-                <option value="az">Name: A–Z</option>
-                <option value="za">Name: Z–A</option>
-              </select>
-            </div>
-            <div class="field">
-              <label aria-hidden="true">&nbsp;</label>
-              <button type="button" class="btn btn-ghost" id="clear-filters">Clear all filters</button>
-            </div>
-          </div>
-          <p class="hint" style="margin:12px 0 0; font-size:0.85rem; color:var(--ink-mute);">Category is a shop's primary category; Specialization lists every category a shop's parts match. Both are derived from the shop's supplied parts text — see README.md for the keyword mapping.</p>
-        </div>
-
-        <div class="result-meta">
-          <p id="vendor-count" aria-live="polite">Loading vendors…</p>
-        </div>
-        <div class="vendor-grid" id="vendor-grid"></div>
-        <div class="empty-state" id="vendor-empty" style="display:none">
-          <h3>No vendors match your search</h3>
-          <p>Try a different shop name or part, or clear all filters to see the full directory again.</p>
-          <button type="button" class="btn btn-primary" id="empty-clear-filters">Clear all filters</button>
-        </div>
-        <nav class="pagination" id="vendor-pagination" aria-label="Vendor pages"></nav>
-      </div>
-    </section>
-
-    <!-- Spare Parts Catalog -->
-    <section class="section section-grey" id="catalog" aria-labelledby="catalog-heading">
-      <div class="container">
-        <div class="section-head">
-          <span class="eyebrow">Spare Parts Catalog</span>
-          <h2 id="catalog-heading">Spare Parts Categories</h2>
-          <p class="lead">An informational catalog of the main spare-parts categories in the market. Choose a category to see the vendors whose parts match it. This catalog lists component types only — it is not a shop, and no prices are shown anywhere.</p>
-        </div>
-        <div class="catalog-grid" id="catalog-grid"></div>
-        <p class="catalog-note">Photographs are real photographs of the component type where one is available. Where no photograph of a specific component was available, the card uses a real photograph of a spare-parts shop or its shelves, and the card says so plainly. Photographs are examples of the component type only; no vehicle-compatibility, stock or availability claims are made.</p>
-      </div>
-    </section>
-
-    <!-- Why Choose Us -->
-    <section class="section" id="why" aria-labelledby="why-heading">
-      <div class="container">
-        <div class="section-head">
-          <span class="eyebrow">Why Choose Us</span>
-          <h2 id="why-heading">Why Use This Directory</h2>
-          <p class="lead">A single, organised place to explore ASH Spare Parts Market.</p>
-        </div>
-        <div class="why-grid">
-          <article class="why-card">
-            <div class="why-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></div>
-            <h3>Organized Vendor Discovery</h3>
-            <p>Shops are listed in one consistent format, so you can find a vendor by name, parts, category or city instead of relying on word of mouth alone.</p>
-          </article>
-          <article class="why-card">
-            <div class="why-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></div>
-            <h3>Multiple Spare Parts Categories</h3>
-            <p>Engine parts, brakes, filters, electrical components, transmission and more — grouped into ten clear categories.</p>
-          </article>
-          <article class="why-card">
-            <div class="why-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16v16H4z"/><path d="M8 9h8M8 13h8M8 17h5"/></svg></div>
-            <h3>Convenient Shop Information</h3>
-            <p>Address, city, business type, main parts and contact details are shown together on each vendor card, where supplied.</p>
-          </article>
-          <article class="why-card">
-            <div class="why-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16M4 12h16M4 18h10"/></svg></div>
-            <h3>Easy Vendor Navigation</h3>
-            <p>Search, filters, alphabetical sorting and paging keep a directory of hundreds of shops easy to move through.</p>
-          </article>
-          <article class="why-card">
-            <div class="why-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21h18M5 21V8l7-5 7 5v13"/><path d="M9 21v-6h6v6"/></svg></div>
-            <h3>One Place to Explore the Market</h3>
-            <p>Shops from Faisalabad, Lahore, Multan and Gujranwala are listed together in a single directory.</p>
-          </article>
-          <article class="why-card">
-            <div class="why-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8z"/></svg></div>
-            <h3>Professional Digital Representation</h3>
-            <p>A clean, organised presentation of the market's vendors, presented by Dr. Nadeem Nazir &amp; Associates.</p>
-          </article>
-        </div>
-      </div>
-    </section>
 
     <!-- FAQ -->
     <section class="section section-warm" id="faq" aria-labelledby="faq-heading">
